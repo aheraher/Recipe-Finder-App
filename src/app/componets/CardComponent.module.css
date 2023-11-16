@@ -1,0 +1,34 @@
+/* CardComponent.module.css */
+
+.box {
+    width: 90vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .card {
+    width: 45%; /* Adjust the width for larger screens */
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(48, 244, 139);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+
+  @media screen and (max-width: 500px) {
+    .card {
+      width: 90%; /* Adjust the width for smaller screens */
+    }
+  }
+  
+  @media screen and (min-width: 501px) and (max-width: 1000px) {
+    .card {
+      width: 45%; /* Adjust the width for medium-sized screens */
+    }
+  }
+  
